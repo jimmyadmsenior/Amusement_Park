@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Compra Realizada - Fitzgerald Park</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="/Amusement_Park/views/assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
