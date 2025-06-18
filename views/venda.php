@@ -35,7 +35,7 @@
             <p id="preco-total">Total: R$ 0,00</p>
             <button type="submit">Comprar</button>
         </form>
-        <p><a href="home.php">Voltar</a></p>
+        <button type="button" onclick="window.history.back()" style="background:none;border:none;color:#ffcc33;font-weight:bold;font-size:1em;cursor:pointer;margin-top:10px;">Voltar</button>
     </div>
 </body>
 </html>
