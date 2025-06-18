@@ -5,6 +5,17 @@
     <title>Comprar Ingressos - Fitzgerald Park</title>
     <link rel="stylesheet" href="/Amusement_Park/views/assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script>
+        function atualizarTotal() {
+            const valorIngresso = 10;
+            const quantidade = document.getElementById('quantidade').value;
+            const total = quantidade ? quantidade * valorIngresso : 0;
+            document.getElementById('preco-total').innerText = 'Total: R$ ' + total.toFixed(2).replace('.', ',');
+        }
+        window.onload = function() {
+            document.getElementById('quantidade').addEventListener('input', atualizarTotal);
+        };
+    </script>
 </head>
 <body>
     <div class="animated-bg">
@@ -21,6 +32,7 @@
             <label for="quantidade">Quantidade de Ingressos:</label>
             <input type="number" name="quantidade" id="quantidade" min="1" required>
             <p>Valor por ingresso: <b>R$ 10,00</b></p>
+            <p id="preco-total">Total: R$ 0,00</p>
             <button type="submit">Comprar</button>
         </form>
         <p><a href="home.php">Voltar</a></p>
