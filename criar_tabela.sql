@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS amusement_park;
+USE amusement_park;
+
+CREATE TABLE IF NOT EXISTS vendas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT NOT NULL,
+    valor_total DECIMAL(10,2) NOT NULL,
+    data_venda DATETIME DEFAULT CURRENT_TIMESTAMP
+);
